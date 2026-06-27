@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASD - Deputy-Involved Shooting</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
+    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors mr-2">
+                    <i class="fa-solid fa-arrow-left text-xl"></i>
+                </a>
+                <div>
+                    <h1 class="text-xl font-black text-white uppercase tracking-wider">Deputy-Involved Shooting (DIS)</h1>
+                    <p class="text-xs text-yellow-500 font-mono font-bold">Order Number: DIS-2026-0616 // Effective: June 16, 2026</p>
+                </div>
+            </div>
+            <span class="bg-red-600 text-xs px-3 py-1 rounded font-mono text-white font-bold uppercase tracking-wider animate__animated animate__pulse animate__infinite">CRITICAL EXECUTIVE MANDATE</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn">
+        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-8 space-y-8">
+            
+            <section class="border-b border-gray-800 pb-6">
+                <h2 class="text-lg font-bold text-yellow-500 uppercase tracking-wider mb-2">Policy Summary</h2>
+                <p class="text-sm text-gray-300 leading-relaxed">The integrity of the Los Angeles County Sheriff's Department rests upon rigorous accountability, absolute operational transparency, and adherence to constitutional policing standards. This protocol mandates standard operating procedures following any incident where a Department member discharges a firearm during the performance of official duties.</p>
+            </section>
+
+            <section class="border-b border-gray-800 pb-6">
+                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-4">2.0 Critical Incident Command & Field Sequences</h2>
+                <div class="overflow-x-auto rounded border border-gray-800">
+                    <table class="w-full text-left text-xs font-mono text-gray-300">
+                        <thead class="bg-[#111317] text-yellow-500 uppercase">
+                            <tr>
+                                <th class="p-3">Phase</th>
+                                <th class="p-3">Mandated Action Protocols</th>
+                                <th class="p-3">Responsibility Centers</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-800">
+                            <tr>
+                                <td class="p-3 font-bold text-white">1. Scene Security</td>
+                                <td class="p-3">Isolate the discharge zone. Establish a physical perimeter utilizing barrier tape, and initiate a Crime Scene Entry Log.</td>
+                                <td class="p-3 text-gray-400">Involved / Responding Deputies</td>
+                            </tr>
+                            <tr class="bg-[#15181f]">
+                                <td class="p-3 font-bold text-white">2. Medical Triage</td>
+                                <td class="p-3">Render immediate trauma care (tactical combat casualty care / CPR) to any wounded individuals.</td>
+                                <td class="p-3 text-gray-400">All On-Scene Personnel</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">3. Notifications</td>
+                                <td class="p-3">Immediate priority notification to the station Watch Commander, who contacts SHB, Homicide, and IAB.</td>
+                                <td class="p-3 text-gray-400">Watch Commander / Field Supervisor</td>
+                            </tr>
+                            <tr class="bg-[#15181f]">
+                                <td class="p-3 font-bold text-white">4. Public Safety Statement</td>
+                                <td class="p-3">Obtain a brief, verbal PSS from the involved deputy regarding direction of fire, outstanding suspects, and weapon counts.</td>
+                                <td class="p-3 text-yellow-500 font-bold">First On-Scene Supervisor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="pb-2">
+                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">4.0 Evidence Control & Protections</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+                    <div class="p-4 bg-[#111317] border border-gray-800 rounded">
+                        <h4 class="text-yellow-500 font-bold uppercase mb-1">Mandatory Separation</h4>
+                        <p class="text-gray-400">Involved and witness deputies shall be immediately separated and transported. No details may be discussed prior to recorded interviews.</p>
+                    </div>
+                    <div class="p-4 bg-[#111317] border border-gray-800 rounded">
+                        <h4 class="text-yellow-500 font-bold uppercase mb-1">Weapon Surrender</h4>
+                        <p class="text-gray-400">The involved weapon will be surrendered in its exact post-incident state (round in chamber) to investigators. A replacement weapon is issued.</p>
+                    </div>
+                    <div class="p-4 bg-[#111317] border border-gray-800 rounded">
+                        <h4 class="text-yellow-500 font-bold uppercase mb-1">Garrity Protections</h4>
+                        <p class="text-gray-400">Statements compelled under administrative threat of termination cannot be used against the employee inside a criminal court trial.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

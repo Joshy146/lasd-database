@@ -1,4 +1,73 @@
-<!-- Main Directory Database Cards Grid -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASD - Command Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bg-yellow-500/10 p-2.5 rounded border border-yellow-500/20">
+                    <i class="fa-solid fa-shield-halved text-2xl text-yellow-500"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-black text-white uppercase tracking-wider">LASD Command Portal</h1>
+                    <p id="terminal-status" class="text-xs text-yellow-500 font-mono font-bold tracking-widest"></p>
+                </div>
+            </div>
+            <span class="bg-green-500/10 text-xs px-3 py-1 rounded border border-green-500/30 font-mono text-green-400 font-bold uppercase tracking-wider animate-pulse">SYSTEM ONLINE</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn">
+        
+        <!-- Live CAD Ticker Matrix -->
+        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-4 mb-8 font-mono text-xs">
+            <div class="flex items-center justify-between border-b border-gray-800 pb-2 mb-3">
+                <span class="text-gray-400 font-bold uppercase"><i class="fa-solid fa-satellite-dish mr-2 text-yellow-500"></i>Live MDT Dispatch Feed</span>
+                <span class="text-gray-500">Frequency: L-TAC 1</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="text-yellow-500/70 uppercase text-[10px] tracking-wider border-b border-gray-800/50">
+                            <th class="pb-2">Unit</th>
+                            <th class="pb-2">Status</th>
+                            <th class="pb-2">Assignment</th>
+                            <th class="pb-2">Location</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800/40 text-gray-300">
+                        <tr>
+                            <td class="py-2 text-yellow-500 font-bold">10-L-10</td>
+                            <td class="py-2"><span class="bg-red-500/20 text-red-400 px-1.5 py-0.5 rounded text-[10px] font-bold animate-pulse">CODE 3 PURSUIT</span></td>
+                            <td class="py-2">Vehicle Code 2800.2</td>
+                            <td class="py-2 text-white">E/B Imperial Hwy</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-400">10-L-22</td>
+                            <td class="py-2"><span class="bg-green-500/20 text-green-400 px-1.5 py-0.5 rounded text-[10px] font-bold">AVAILABLE</span></td>
+                            <td class="py-2">Routine Patrol</td>
+                            <td class="py-2 text-white">Century Station Zone</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-yellow-500">AERO-1</td>
+                            <td class="py-2"><span class="bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded text-[10px] font-bold">TRACKING</span></td>
+                            <td class="py-2">Air Support Overhead</td>
+                            <td class="py-2 text-white">Compton Operational Area</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Main Directory Database Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <a href="policy.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-yellow-500/40 rounded-xl p-6 transition-all duration-200 group">
                 <div class="flex justify-between items-start mb-4">
@@ -24,6 +93,46 @@
                     <span class="text-[10px] font-mono bg-blue-950/30 text-blue-400 px-2 py-0.5 rounded">RTO-10</span>
                 </div>
                 <h3 class="text-md font-bold text-white group-hover:text-blue-400 transition-colors uppercase mb-1">Radio Codes & Phonetics</h3>
-                <p class="text-xs text-gray-400 leading-relaxed">Full interactive dictionary for active 10-codes, response status levels, medical codes, and complete phonetic alphabet spellouts.</p>
+                <p class="text-xs text-gray-400 leading-relaxed">Full interactive tracking sheet for standard 10-codes, response status signals, priority fields, and full phonetic alphabet matrix layout from HCRP _ Codes - 10-Codes and Useful Information (1).pdf.</p>
             </a>
         </div>
+
+    </main>
+
+    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
+        </div>
+    </footer>
+
+    <!-- Tactical Radio Audio Engine -->
+    <audio id="radioBeep" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+
+    <script>
+        // Terminal Typing Effect Execution
+        const text = "CONNECTING TO LASD SECURE DATABASE... SYSTEM ACTIVE.";
+        let i = 0;
+        function typeEffect() {
+            if (i < text.length) {
+                document.getElementById("terminal-status").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, 40);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', typeEffect);
+
+        // Click Response Chirp Logic
+        const tacticalElements = document.querySelectorAll('a, button, tr, [role="button"]');
+        const audio = document.getElementById('radioBeep');
+        audio.volume = 0.15; 
+
+        tacticalElements.forEach(element => {
+            element.addEventListener('click', () => {
+                audio.currentTime = 0; 
+                audio.play().catch(() => {});
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASD - Body-Worn Camera Policy</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
+    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors mr-2">
+                    <i class="fa-solid fa-arrow-left text-xl"></i>
+                </a>
+                <div>
+                    <h1 class="text-xl font-black text-white uppercase tracking-wider">Body-Worn Camera Policy</h1>
+                    <p class="text-xs text-yellow-500 font-mono font-bold">Order Number: BWC-2026-0616 // Effective: June 16, 2026</p>
+                </div>
+            </div>
+            <span class="bg-yellow-500/10 text-xs px-3 py-1 rounded border border-yellow-500/30 font-mono text-yellow-500 font-bold uppercase tracking-wider">MANDATORY USE & STORAGE STANDARDS</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn">
+        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-8 space-y-8">
+            
+            <section class="border-b border-gray-800 pb-6">
+                <h2 class="text-lg font-bold text-yellow-500 uppercase tracking-wider mb-2">Purpose & Scope</h2>
+                <p class="text-sm text-gray-300 leading-relaxed">This directive establishes rigid guidelines for the mandatory deployment, activation, and management of Body-Worn Camera (BWC) simulation systems within the Los Angeles County Sheriff's Department (LASD) operational framework. Because direct in-game technical feeds cannot automatically write to servers, all deployed units are required to utilize third-party screen recording software acting as digital equivalents of tactical hardware.</p>
+            </section>
+
+            <section class="border-b border-gray-800 pb-6">
+                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-4">Technical Simulation Standards</h2>
+                <div class="overflow-x-auto rounded border border-gray-800">
+                    <table class="w-full text-left text-xs font-mono text-gray-300">
+                        <thead class="bg-[#111317] text-yellow-500 uppercase">
+                            <tr>
+                                <th class="p-3">Approved Software Platform</th>
+                                <th class="p-3">Optimized Application & Utility</th>
+                                <th class="p-3">Storage Protocol</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-800">
+                            <tr>
+                                <td class="p-3 font-bold text-white">Medal.tv</td>
+                                <td class="p-3">Highly recommended for standard patrol units. Streamlined for rapid clipping and automatic cloud rendering.</td>
+                                <td class="p-3 text-yellow-500 font-bold">Cloud Database / Shareable URL Link</td>
+                            </tr>
+                            <tr class="bg-[#15181f]">
+                                <td class="p-3 font-bold text-white">OBS Studio</td>
+                                <td class="p-3">Advanced open-source utility. Ideal for high-definition recording and complex multi-audio track setups.</td>
+                                <td class="p-3 text-gray-400">Local Disk Storage / Manual Cloud Export</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">NVIDIA ShadowPlay</td>
+                                <td class="p-3">Low-overhead background capture hardware engine restricted to laptops/desktops with NVIDIA processors.</td>
+                                <td class="p-3 text-gray-400">Local Directory / Fast-clip instant replay</td>
+                            </tr>
+                            <tr class="bg-[#15181f]">
+                                <td class="p-3 font-bold text-white">Xbox Game Bar</td>
+                                <td class="p-3">Native Windows architecture capture tool deployed as a primary fallback option during technical software failures.</td>
+                                <td class="p-3 text-gray-400">Local Windows Captures Directory</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="pb-2">
+                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">Operational Guidelines & Shift-End Logging</h2>
+                <p class="text-sm text-gray-300 mb-3">Software activation must definitively capture all traffic stops, vehicle pursuits, arrest procedures, and tactical crowd controls. Raw data captures must remain completely unaltered.</p>
+                <div class="bg-red-950/20 border border-red-900/40 p-4 rounded text-xs text-gray-300 mb-4">
+                    <strong class="text-red-500 uppercase block font-mono mb-1"><i class="fa-solid fa-circle-exclamation mr-1"></i> Critical Departmental Warning</strong>
+                    Any intentional tampering, failure to record mandatory field events, or unexplained deletion of operational video files will be treated as serious misconduct, resulting in immediate suspension or permanent termination of department credentials.
+                </div>
+                <div class="p-4 bg-[#111317] border border-gray-800 rounded font-mono text-xs">
+                    <span class="text-yellow-500 font-bold block mb-1">#BWC-LOGS SUBMISSION RULE:</span>
+                    Every unit must upload, link, or register their shift footage into the designated #bwc-logs channel prior to logging off duty, noting date, callsign, badge number, and an incident index summary.
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

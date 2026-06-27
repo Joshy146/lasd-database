@@ -1,9 +1,5 @@
 # Los Angeles County Sheriff's Department — Command Portal
 
-![System Status](https://img.shields.io/badge/System_Status-Active-success?style=for-the-badge&logo=opsgenie&logoColor=white&color=eab308)
-![Platform](https://img.shields.io/badge/Platform-GitHub_Pages-blue?style=for-the-badge&logo=github&logoColor=white&color=1a1d24)
-![Version](https://img.shields.io/badge/Version-2026--v1-orange?style=for-the-badge&font-family=monospace)
-
 Welcome to the official digital documentation portal and simulation tracking platform for the **Los Angeles County Sheriff's Department** roleplay community. This central repository hosts the essential frameworks, protocols, and standard operating procedures required for field deputies and command staff.
 
 ---

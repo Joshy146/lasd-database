@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASD - Radio Codes & Phonetic Matrix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors mr-2">
+                    <i class="fa-solid fa-arrow-left text-xl"></i>
+                </a>
+                <div>
+                    <h1 class="text-xl font-black text-white uppercase tracking-wider">Radio Codes & Communications Matrix</h1>
+                    <p class="text-xs text-yellow-500 font-mono font-bold">Reference: 10-Codes // Response Signals // Phonetics</p>
+                </div>
+            </div>
+            <span class="bg-yellow-500/10 text-xs px-3 py-1 rounded border border-yellow-500/30 font-mono text-yellow-500 font-bold uppercase tracking-wider">COMMS REFERENCE</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn space-y-8">
+        
+        <!-- Grid layout for 10-Codes Split Tables -->
+        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-6 font-mono text-xs">
+            <h3 class="text-sm font-bold uppercase text-white border-b border-gray-800 pb-3 mb-4"><i class="fa-solid fa-headset mr-2 text-yellow-500"></i>Standard 10-Codes Database</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
+                
+                <!-- Left Column 10-Codes -->
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="text-yellow-500/70 uppercase text-[10px] tracking-wider border-b border-gray-800/50">
+                            <th class="pb-2 pl-2">Code</th>
+                            <th class="pb-2">Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800/40 text-gray-300">
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-0</td><td class="py-2">Disappeared / Game Crash</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-1</td><td class="py-2">Frequency Change</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-3</td><td class="py-2">Stop Transmitting</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-4</td><td class="py-2">Affirmative</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-5</td><td class="py-2">AFK</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-6</td><td class="py-2">Busy</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-7</td><td class="py-2">Out of Service</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-8</td><td class="py-2">In Service</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-9</td><td class="py-2">Repeat</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-10</td><td class="py-2">Fight in Progress</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-11</td><td class="py-2">Traffic Stop</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-12</td><td class="py-2">Active Ride Along</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-13</td><td class="py-2">Shots Fired</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-15</td><td class="py-2">Subject in Custody</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-16</td><td class="py-2">Stolen Vehicle</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-17</td><td class="py-2">Suspicious Person/Vehicle</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-20</td><td class="py-2">Location</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-22</td><td class="py-2">Disregard</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-23</td><td class="py-2">Arrived on Scene</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-25</td><td class="py-2">Domestic Dispute</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-26</td><td class="py-2">ETA</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-27</td><td class="py-2">Driver's License Check for Valid</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-28</td><td class="py-2">Vehicle License Plate Check</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-29</td><td class="py-2">NCIC Warrant Check</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-30</td><td class="py-2">Wanted Person / Warrant</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-31</td><td class="py-2">Not Wanted / No Warrants</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-32</td><td class="py-2">Request Backup (Code 1, 2, 3)</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-35</td><td class="py-2">Wrap Scene Up</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-41</td><td class="py-2">Beginning Tour of Duty</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Right Column 10-Codes -->
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="text-yellow-500/70 uppercase text-[10px] tracking-wider border-b border-gray-800/50 block md:table-row">
+                            <th class="pb-2 pl-2">Code</th>
+                            <th class="pb-2">Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800/40 text-gray-300">
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-42</td><td class="py-2">Ending Tour of Duty</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-43</td><td class="py-2">Information</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-49</td><td class="py-2">Homicide</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-50</td><td class="py-2">Vehicle Accident <span class="text-gray-500 text-[10px]">(PD: Property, PI: Injury, F: Fatal)</span></td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-51</td><td class="py-2">Request Towing Service</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-52</td><td class="py-2">Request EMS</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-53</td><td class="py-2">Request Fire</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-55</td><td class="py-2">Intoxicated Driver</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-56</td><td class="py-2">Intoxicated Pedestrian</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-60</td><td class="py-2">Armed with Gun</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-61</td><td class="py-2">Armed with Knife</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-62</td><td class="py-2">Kidnapping</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-64</td><td class="py-2">Sexual Assault</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-65</td><td class="py-2">Escorting Prisoner</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-66</td><td class="py-2">Reckless Driving / Street Racing</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-67</td><td class="py-2">Fire</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-68</td><td class="py-2">Armed Robbery</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-70</td><td class="py-2">Foot Pursuit</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-71</td><td class="py-2">Request Supervisor to Scene</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-73</td><td class="py-2">Advise Status</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-80</td><td class="py-2">Vehicle Pursuit</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-90</td><td class="py-2">In Game Warning</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-93</td><td class="py-2">Removed from Game</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">10-97</td><td class="py-2">En Route</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-red-500">10-99</td><td class="py-2 text-red-400 font-bold">OFFICER IN DISTRESS - EXTREME EMERGENCY</td></tr>
+                        <tr class="hover:bg-gray-800/20"><td class="py-2 pl-2 font-bold text-yellow-500">11-44</td><td class="py-2">Person Deceased</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Responses, Priorities, Fire Signals Section Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono text-xs">
+            
+            <!-- Response Codes Panel -->
+            <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-5 space-y-3">
+                <h4 class="text-white font-bold uppercase border-b border-gray-800 pb-2 text-yellow-500"><i class="fa-solid fa-lightbulb mr-2"></i>Response Levels</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><strong class="text-red-500 font-bold uppercase">Code Zero:</strong> Game Crash / Disappeared</li>
+                    <li><strong class="text-white">Code 1:</strong> Routine / No lights or sirens</li>
+                    <li><strong class="text-blue-400">Code 2:</strong> Limited lights & sirens urgent approach</li>
+                    <li><strong class="text-red-400 animate-pulse">Code 3:</strong> Emergency Response / Lights & Sirens</li>
+                    <li><strong class="text-green-400">Code 4:</strong> Scene Under Control</li>
+                    <li><strong class="text-purple-400">Code 5:</strong> Felony Stop / High Risk Stop</li>
+                    <li><strong class="text-yellow-500">Code 6:</strong> Investigating On-Scene</li>
+                </ul>
+            </div>
+
+            <!-- Medical/Fire Signals Panel -->
+            <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-5 space-y-3">
+                <h4 class="text-white font-bold uppercase border-b border-gray-800 pb-2 text-red-400"><i class="fa-solid fa-fire-extinguisher mr-2"></i>Fire & Medical Signals</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><strong class="text-blue-400">Code Blue:</strong> Lost pulse (Start CPR)</li>
+                    <li><strong class="text-red-500 animate-pulse">Code Red:</strong> Activate trauma code (5 minute timer)</li>
+                    <li class="pt-2 border-t border-gray-800/60 text-gray-400 uppercase text-[10px] font-bold tracking-wider">Transport Classifications:</li>
+                    <li><strong class="text-red-400">Priority 1:</strong> Highest priority transport</li>
+                    <li><strong class="text-yellow-500">Priority 2:</strong> Medium priority transport</li>
+                    <li><strong class="text-gray-400">Priority 3:</strong> Low priority transport (routine)</li>
+                </ul>
+            </div>
+
+            <!-- Phonetic Alphabet Reference Card -->
+            <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-5 space-y-2">
+                <h4 class="text-white font-bold uppercase border-b border-gray-800 pb-2 text-green-400"><i class="fa-solid fa-arrow-down-a-z mr-2"></i>Phonetic Alphabet</h4>
+                <div class="grid grid-cols-2 text-[11px] gap-x-4 text-gray-300 h-44 overflow-y-auto pr-1 scrollbar-thin">
+                    <div><strong>A</strong> - Alpha</div><div><strong>N</strong> - November</div>
+                    <div><strong>B</strong> - Bravo</div><div><strong>O</strong> - Oscar</div>
+                    <div><strong>C</strong> - Charlie</div><div><strong>P</strong> - Papa</div>
+                    <div><strong>D</strong> - Delta</div><div><strong>Q</strong> - Quebec</div>
+                    <div><strong>E</strong> - Echo</div><div><strong>R</strong> - Romeo</div>
+                    <div><strong>F</strong> - Foxtrot</div><div><strong>S</strong> - Sierra</div>
+                    <div><strong>G</strong> - Golf</div><div><strong>T</strong> - Tango</div>
+                    <div><strong>H</strong> - Hotel</div><div><strong>U</strong> - Uniform</div>
+                    <div><strong>I</strong> - India</div><div><strong>V</strong> - Victor</div>
+                    <div><strong>J</strong> - Juliet</div><div><strong>W</strong> - Whiskey</div>
+                    <div><strong>K</strong> - King</div><div><strong>X</strong> - X-ray</div>
+                    <div><strong>L</strong> - Lima</div><div><strong>Y</strong> - Yankee</div>
+                    <div><strong>M</strong> - Mike</div><div><strong>Z</strong> - Zulu</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
+        </div>
+    </footer>
+
+    <!-- Tactical Radio Audio Engine -->
+    <audio id="radioBeep" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+
+    <script>
+        const tacticalElements = document.querySelectorAll('a, button, tr, [role="button"]');
+        const audio = document.getElementById('radioBeep');
+        audio.volume = 0.15; 
+
+        tacticalElements.forEach(element => {
+            element.addEventListener('click', () => {
+                audio.currentTime = 0; 
+                audio.play().catch(() => {});
+            });
+        });
+    </script>
+</body>
+</html>

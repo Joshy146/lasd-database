@@ -4,135 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LASD - Command Portal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .tactical-glow:hover {
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.3);
+            border-color: #eab308;
+        }
+    </style>
 </head>
 <body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
     <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-4">
-                <div class="bg-yellow-500/10 p-2.5 rounded border border-yellow-500/20">
-                    <i class="fa-solid fa-shield-halved text-2xl text-yellow-500"></i>
-                </div>
+                <i class="fa-solid fa-shield-halved text-4xl text-yellow-500"></i>
                 <div>
-                    <h1 class="text-xl font-black text-white uppercase tracking-wider">LASD Command Portal</h1>
-                    <p id="terminal-status" class="text-xs text-yellow-500 font-mono font-bold tracking-widest"></p>
+                    <h1 class="text-2xl font-black tracking-wider text-white">LOS ANGELES COUNTY SHERIFF'S DEPARTMENT</h1>
+                    <p class="text-xs tracking-widest text-yellow-500 font-bold uppercase">Official Documentation & Simulation Tracker</p>
                 </div>
             </div>
-            <span class="bg-green-500/10 text-xs px-3 py-1 rounded border border-green-500/30 font-mono text-green-400 font-bold uppercase tracking-wider animate-pulse">SYSTEM ONLINE</span>
+            <div class="text-right">
+                <span class="bg-yellow-500/10 text-yellow-500 border border-yellow-500/30 text-xs px-3 py-1 rounded font-mono uppercase tracking-wider">
+                    System Active // 2026-v1
+                </span>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn">
-        
-        <!-- Live CAD Ticker Matrix -->
-        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-4 mb-8 font-mono text-xs">
-            <div class="flex items-center justify-between border-b border-gray-800 pb-2 mb-3">
-                <span class="text-gray-400 font-bold uppercase"><i class="fa-solid fa-satellite-dish mr-2 text-yellow-500"></i>Live MDT Dispatch Feed</span>
-                <span class="text-gray-500">Frequency: L-TAC 1</span>
-            </div>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left">
-                    <thead>
-                        <tr class="text-yellow-500/70 uppercase text-[10px] tracking-wider border-b border-gray-800/50">
-                            <th class="pb-2">Unit</th>
-                            <th class="pb-2">Status</th>
-                            <th class="pb-2">Assignment</th>
-                            <th class="pb-2">Location</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-800/40 text-gray-300">
-                        <tr>
-                            <td class="py-2 text-yellow-500 font-bold">10-L-10</td>
-                            <td class="py-2"><span class="bg-red-500/20 text-red-400 px-1.5 py-0.5 rounded text-[10px] font-bold animate-pulse">CODE 3 PURSUIT</span></td>
-                            <td class="py-2">Vehicle Code 2800.2</td>
-                            <td class="py-2 text-white">E/B Imperial Hwy</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-gray-400">10-L-22</td>
-                            <td class="py-2"><span class="bg-green-500/20 text-green-400 px-1.5 py-0.5 rounded text-[10px] font-bold">AVAILABLE</span></td>
-                            <td class="py-2">Routine Patrol</td>
-                            <td class="py-2 text-white">Century Station Zone</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 text-yellow-500">AERO-1</td>
-                            <td class="py-2"><span class="bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded text-[10px] font-bold">TRACKING</span></td>
-                            <td class="py-2">Air Support Overhead</td>
-                            <td class="py-2 text-white">Compton Operational Area</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+        <div class="mb-10 text-center md:text-left animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-extrabold text-white tracking-tight">Main Command Directives</h2>
+            <p class="text-gray-400 mt-2">Select a manual below to access authorized departmental operational codes and policies.</p>
         </div>
 
-        <!-- Main Directory Database Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="policy.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-yellow-500/40 rounded-xl p-6 transition-all duration-200 group">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="text-yellow-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-book-shield"></i></div>
-                    <span class="text-[10px] font-mono bg-gray-800 text-gray-400 px-2 py-0.5 rounded">MPP-2026</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate__animated animate__fadeInUp">
+            
+            <a href="policy.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-book-open text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">MPP-2026</span>
                 </div>
-                <h3 class="text-md font-bold text-white group-hover:text-yellow-500 transition-colors uppercase mb-1">Manual of Policy & Procedures</h3>
-                <p class="text-xs text-gray-400 leading-relaxed">Review departmental structures, hierarchies, communication protocols, radio rules, and mandatory traffic stop scripts.</p>
+                <h3 class="text-xl font-bold text-white mb-2">Manual of Policy & Procedures</h3>
+                <p class="text-gray-400 text-sm">General operational frameworks, chain of command rules, and traffic stop procedures.</p>
             </a>
 
-            <a href="emergency.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-red-500/40 rounded-xl p-6 transition-all duration-200 group">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="text-red-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <span class="text-[10px] font-mono bg-red-950/30 text-red-400 px-2 py-0.5 rounded">ERP-2026</span>
+            <a href="handbook.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-id-card text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">EHB-2026</span>
                 </div>
-                <h3 class="text-md font-bold text-white group-hover:text-red-400 transition-colors uppercase mb-1">Emergency Response Protocol</h3>
-                <p class="text-xs text-gray-400 leading-relaxed">Critical blueprints for active shooter scenarios, inner/outer perimeter perimeters, scene isolation, and NIMS incident commands.</p>
+                <h3 class="text-xl font-bold text-white mb-2">Employee Handbook</h3>
+                <p class="text-gray-400 text-sm">Mission statements, grooming policies, appearance standards, and time commitments.</p>
             </a>
 
-            <a href="codes.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-blue-500/40 rounded-xl p-6 transition-all duration-200 group">
-                <div class="flex justify-between items-start mb-4">
-                    <div class="text-blue-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-headset"></i></div>
-                    <span class="text-[10px] font-mono bg-blue-950/30 text-blue-400 px-2 py-0.5 rounded">RTO-10</span>
+            <a href="discipline.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-gavel text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">DPCS-2026</span>
                 </div>
-                <h3 class="text-md font-bold text-white group-hover:text-blue-400 transition-colors uppercase mb-1">Radio Codes & Phonetics</h3>
-                <p class="text-xs text-gray-400 leading-relaxed">Full interactive tracking sheet for standard 10-codes, response status signals, priority fields, and full phonetic alphabet matrix layout from HCRP _ Codes - 10-Codes and Useful Information (1).pdf.</p>
+                <h3 class="text-xl font-bold text-white mb-2">Disciplinary Actions & Procedures</h3>
+                <p class="text-gray-400 text-sm">Violation classifications (Levels 1-3), administrative strikes, and civil service appeals.</p>
             </a>
+
+            <a href="emergency.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-triangle-exclamation text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">ERP-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Emergency Response Protocol</h3>
+                <p class="text-gray-400 text-sm">Active shooter operations, scene containment, HazMat isolation zones, and NIMS protocols.</p>
+            </a>
+
+            <a href="uof.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-hand-fist text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">UOF-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Use of Force Directive</h3>
+                <p class="text-gray-400 text-sm">Objective reasonableness scales, resistance profiles, and prohibited physical actions.</p>
+            </a>
+
+            <a href="dis.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-gun text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">DIS-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Deputy-Involved Shooting</h3>
+                <p class="text-gray-400 text-sm">Post-discharge mandates, weapon surrender rules, and transparency media guidelines.</p>
+            </a>
+
+            <a href="bwc.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-video text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">BWC-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Body Worn Camera Policy</h3>
+                <p class="text-gray-400 text-sm">Screen recording capture software rules (Medal, OBS, ShadowPlay), submission requirements, and data integrity laws.</p>
+            </a>
+
+            <!-- NEW RADIO CODES MODULE CARD -->
+            <a href="codes.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow md:col-span-1 lg:col-span-2">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-headset text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">RTO-10</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Radio Codes & Phonetics Matrix</h3>
+                <p class="text-gray-400 text-sm">Authorized 10-codes dispatcher dictionary, tactical response status codes, emergency transport priorities, and custom phonetic configurations derived directly from HCRP _ Codes - 10-Codes and Useful Information (1).pdf.</p>
+            </a>
+
         </div>
-
     </main>
 
     <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
         <div class="max-w-4xl mx-auto space-y-3">
-            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
-            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
+            <p class="text-gray-400 font-bold tracking-wider">
+                Created and Owned By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span>
+            </p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">
+                ⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.
+            </p>
+            <p class="font-mono text-gray-600">&copy; 2026 LASD Simulation Network. All Tactical Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Tactical Radio Audio Engine -->
-    <audio id="radioBeep" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
-
-    <script>
-        // Terminal Typing Effect Execution
-        const text = "CONNECTING TO LASD SECURE DATABASE... SYSTEM ACTIVE.";
-        let i = 0;
-        function typeEffect() {
-            if (i < text.length) {
-                document.getElementById("terminal-status").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeEffect, 40);
-            }
-        }
-        window.addEventListener('DOMContentLoaded', typeEffect);
-
-        // Click Response Chirp Logic
-        const tacticalElements = document.querySelectorAll('a, button, tr, [role="button"]');
-        const audio = document.getElementById('radioBeep');
-        audio.volume = 0.15; 
-
-        tacticalElements.forEach(element => {
-            element.addEventListener('click', () => {
-                audio.currentTime = 0; 
-                audio.play().catch(() => {});
-            });
-        });
-    </script>
 </body>
 </html>

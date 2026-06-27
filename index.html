@@ -1,198 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LASD - Manual of Policy and Procedures</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
-<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
-
-    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors mr-2">
-                    <i class="fa-solid fa-arrow-left text-xl"></i>
-                </a>
-                <div>
-                    <h1 class="text-xl font-black text-white uppercase tracking-wider">Manual of Policy and Procedures</h1>
-                    <p class="text-xs text-yellow-500 font-mono font-bold">Order Number: MPP-2026-0616 // Effective: June 16, 2026</p>
+<!-- Main Directory Database Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="policy.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-yellow-500/40 rounded-xl p-6 transition-all duration-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="text-yellow-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-book-shield"></i></div>
+                    <span class="text-[10px] font-mono bg-gray-800 text-gray-400 px-2 py-0.5 rounded">MPP-2026</span>
                 </div>
-            </div>
-            <span class="bg-gray-800 text-xs px-3 py-1 rounded border border-gray-700 font-mono text-gray-400">AMENDED / LASD</span>
+                <h3 class="text-md font-bold text-white group-hover:text-yellow-500 transition-colors uppercase mb-1">Manual of Policy & Procedures</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Review departmental structures, hierarchies, communication protocols, radio rules, and mandatory traffic stop scripts.</p>
+            </a>
+
+            <a href="emergency.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-red-500/40 rounded-xl p-6 transition-all duration-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="text-red-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <span class="text-[10px] font-mono bg-red-950/30 text-red-400 px-2 py-0.5 rounded">ERP-2026</span>
+                </div>
+                <h3 class="text-md font-bold text-white group-hover:text-red-400 transition-colors uppercase mb-1">Emergency Response Protocol</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Critical blueprints for active shooter scenarios, inner/outer perimeter perimeters, scene isolation, and NIMS incident commands.</p>
+            </a>
+
+            <a href="codes.html" class="block bg-[#1a1d24] border border-gray-800 hover:border-blue-500/40 rounded-xl p-6 transition-all duration-200 group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="text-blue-500 text-2xl group-hover:scale-110 transition-transform"><i class="fa-solid fa-headset"></i></div>
+                    <span class="text-[10px] font-mono bg-blue-950/30 text-blue-400 px-2 py-0.5 rounded">RTO-10</span>
+                </div>
+                <h3 class="text-md font-bold text-white group-hover:text-blue-400 transition-colors uppercase mb-1">Radio Codes & Phonetics</h3>
+                <p class="text-xs text-gray-400 leading-relaxed">Full interactive dictionary for active 10-codes, response status levels, medical codes, and complete phonetic alphabet spellouts.</p>
+            </a>
         </div>
-    </header>
-
-    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full animate__animated animate__fadeIn">
-        <div class="bg-[#1a1d24] border border-gray-800 rounded-xl p-8 space-y-8">
-            
-            <section class="border-b border-gray-800 pb-6">
-                <h2 class="text-lg font-bold text-yellow-500 tracking-wider uppercase mb-2">Statement of Purpose</h2>
-                <p class="text-sm text-gray-300 leading-relaxed">The purpose of this document is to provide clear, structured guidelines to ensure all employees of the Los Angeles County Sheriff's Department (LASD) operate efficiently, safely, and in compliance with established laws, regulations, and ethical standards. These Standard Operating Procedures (SOPs) cover a wide range of situations and ensure uniformity in the execution of duties across all stations, bureaus, and commands.</p>
-            </section>
-
-            <section class="border-b border-gray-800 pb-6">
-                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">1. General Operational Guidelines</h2>
-                <h3 class="text-md font-bold text-yellow-500 uppercase tracking-wider mb-2">1.1 Chain of Command & Departmental Hierarchy</h3>
-                <p class="text-sm text-gray-300 mb-4">All employees must strictly adhere to the established chain of command when reporting incidents, routing administrative requests, or seeking field assistance. Supervisors are directly responsible for overseeing, directing, and evaluating their subordinate staff. Any issues or concerns that cannot be resolved within a localized unit or shift watch must be systematically escalated through the command structure outlined below.</p>
-                
-                <div class="overflow-x-auto rounded border border-gray-800">
-                    <table class="w-full text-left text-xs text-gray-300 font-mono">
-                        <thead class="bg-[#111317] text-yellow-500 uppercase">
-                            <tr>
-                                <th class="p-3">Command Tier</th>
-                                <th class="p-3">LASD Leadership Ranks</th>
-                                <th class="p-3">Primary Operational Responsibility</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-800">
-                            <tr>
-                                <td class="p-3 font-bold text-white">Executive / High Command</td>
-                                <td class="p-3">Sheriff, Undersheriff, Assistant Sheriff, Division Chief</td>
-                                <td class="p-3">Department-wide governance, strategic policy development, and executive administration.</td>
-                            </tr>
-                            <tr class="bg-[#15181f]">
-                                <td class="p-3 font-bold text-white">Unit / Station Command</td>
-                                <td class="p-3">Commander, Captain, Lieutenant</td>
-                                <td class="p-3">Management of individual stations, specialized bureaus, and shift watch operations.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-3 font-bold text-white">Field Supervision</td>
-                                <td class="p-3">Sergeant, Corporal</td>
-                                <td class="p-3">Direct field supervision, scene management, and tactical oversight of line personnel.</td>
-                            </tr>
-                            <tr class="bg-[#15181f]">
-                                <td class="p-3 font-bold text-white">Line Personnel / Entry Level</td>
-                                <td class="p-3">Master Deputy, Senior Deputy, Deputy, Probationary Deputy, Deputy Trainee</td>
-                                <td class="p-3">Primary field patrol, execution of law enforcement functions, and specialized field operations.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="text-md font-bold text-yellow-500 uppercase tracking-wider mt-6 mb-2">1.2 Communication Protocol</h3>
-                <ul class="space-y-2 text-sm text-gray-300 list-disc list-inside">
-                    <li><strong class="text-white">Radio Usage:</strong> Deputies shall utilize the departmental radio frequency for all official field communications during patrols. Casual, personal, or random chatting within the Radio Transmission Operator (RTO) frequency is strictly prohibited and will result in disciplinary strikes or administrative action.</li>
-                    <li><strong class="text-white">Dispatch Coordination:</strong> All calls for service, tactical actions, and field requests must be routed directly through Dispatch. Deputies must check in regularly and maintain continuous radio contact, particularly during high-risk operations.</li>
-                    <li><strong class="text-white">Incident Documentation:</strong> Detailed incident reports must be authored and submitted within 24 hours of the occurrence.</li>
-                </ul>
-            </section>
-
-            <section class="border-b border-gray-800 pb-6">
-                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">2. Law Enforcement Procedures</h2>
-                <h3 class="text-md font-bold text-yellow-500 uppercase tracking-wider mb-2">2.1 Tactical Traffic Stop Procedure</h3>
-                <p class="text-sm text-gray-300 mb-4">When conducting a traffic stop, deputies must execute the Tactical Traffic Stop Procedure to maximize officer and public safety.</p>
-                
-                <div class="bg-red-950/20 border-l-4 border-red-600 p-4 rounded mb-4">
-                    <h4 class="text-red-500 font-bold text-xs uppercase tracking-wider mb-1"><i class="fa-solid fa-triangle-exclamation mr-2"></i>Tactical Safety Warning: The Red Zone</h4>
-                    <p class="text-gray-400 text-xs">Deputies are strictly prohibited from crossing or standing in the "Red Zone"—the space directly between the front bumper of the patrol vehicle and the rear bumper of the violator's vehicle. When approaching, exit your vehicle and route around the rear of your own patrol unit to avoid ambushes or crushing injuries from rear-end collisions.</p>
-                </div>
-
-                <div class="bg-[#111317] p-4 rounded border border-gray-800 font-mono text-xs text-yellow-400 space-y-2 mb-4">
-                    <p class="text-gray-400 font-bold uppercase">// OFFICIAL CONTACT SCRIPT SEQUENCE</p>
-                    <p><strong>[INITIAL CONTACT]</strong></p>
-                    <p><strong>Deputy:</strong> "Good [morning/afternoon/evening], sir/ma'am. I'm Deputy [Name] with the Los Angeles County Sheriff's Department. The reason I stopped you today is because [state specific moving or equipment violation]. May I please see your driver's license, vehicle registration, and proof of insurance?"</p>
-                    <p><strong>[OFFICER CHECKS INFORMATION]</strong></p>
-                    <p class="text-gray-500">(Return to the protection of the patrol vehicle. Run the driver's information, conduct background queries, and verify vehicle registration through the CAD/MDT system.)</p>
-                    <p><strong>[ISSUING A CITATION OR WARNING]</strong></p>
-                    <p><strong>Deputy:</strong> "I am issuing you a citation for [violation]. Please sign the bottom of this electronic tablet/form. Your signature is not an admission of guilt; it is simply an acknowledgment that you have received the citation and promise to either pay the fine or appear in court by the mandated date."</p>
-                    <p><strong>[ENDING THE STOP]</strong></p>
-                    <p><strong>Deputy:</strong> "Thank you, sir/ma'am. Have a safe day. You are free to merge back into traffic as soon as I return to my vehicle and extinguish my emergency lights."</p>
-                </div>
-
-                <div class="bg-blue-950/20 border-l-4 border-blue-500 p-4 rounded mb-4 text-xs text-gray-400">
-                    <strong class="text-white uppercase block mb-1">Professional Standards Prohibitions</strong>
-                    DO NOT ASK: "Do you know why I stopped you?" This phrasing is deemed unprofessional, creates unnecessary adversarial friction, and can result in administrative complaints regarding "entrapment" or improper pre-Miranda questioning.
-                </div>
-
-                <h3 class="text-md font-bold text-yellow-500 uppercase tracking-wider mt-6 mb-2">2.2 Arrest Procedures & Miranda</h3>
-                <p class="text-sm text-gray-300 mb-2">The constitutional rights warning must be read verbatim immediately following an arrest if custodial interrogation is to take place:</p>
-                <div class="bg-[#15181f] p-4 rounded border border-gray-800 text-sm italic text-gray-300 mb-4">
-                    "You have the right to remain silent. Anything you say can and will be used against you in a court of law. You have the right to talk to a lawyer and have him present with you while you are being questioned. If you cannot afford to hire a lawyer, one will be appointed to represent you before any questioning if you wish. Do you understand each of these rights I have explained to you? Having these rights in mind, do you wish to talk to us now?"
-                </div>
-                <p class="text-xs text-gray-400 font-mono">CODE 3 TRANSPORT RESTRICTION: The operation of emergency lights and sirens (Code 3) is strictly prohibited while transporting a secured prisoner unless an immediate, life-threatening medical emergency occurs mid-transport.</p>
-            </section>
-
-            <section class="border-b border-gray-800 pb-6">
-                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">4. Vehicle Operations & Pursuits</h2>
-                <div class="overflow-x-auto rounded border border-gray-800">
-                    <table class="w-full text-left text-xs text-gray-300 font-mono">
-                        <thead class="bg-[#111317] text-yellow-500 uppercase">
-                            <tr>
-                                <th class="p-3">Pursuit Phase</th>
-                                <th class="p-3">Mandated Tactical Protocol</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-800">
-                            <tr>
-                                <td class="p-3 font-bold text-white">Initiation</td>
-                                <td class="p-3">Immediately activate all emergency lights and sirens (Code 3). Broadcast current location, speed, direction of travel, and vehicle description to RTO.</td>
-                            </tr>
-                            <tr class="bg-[#15181f]">
-                                <td class="p-3 font-bold text-white">Safety Compliance</td>
-                                <td class="p-3">Deputies must drive defensively, continuously balancing the immediate need for apprehension against the severe risk to public safety.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-3 font-bold text-white">Termination Parameters</td>
-                                <td class="p-3">Pursuits must be immediately terminated if environmental conditions make it too hazardous, if tracking assets (Aero Bureau) take over tracking, or when explicitly ordered to terminate by a Field Supervisor or Watch Commander.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section class="pb-4">
-                <h2 class="text-xl font-extrabold text-white uppercase tracking-wide mb-3">7. Specialized Units Division</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
-                    <div class="bg-[#111317] p-4 rounded border border-gray-800">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-yellow-500 font-bold uppercase text-sm">CID / Detectives</span>
-                            <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-400">Rank: Senior Deputy+</span>
-                        </div>
-                        <p class="text-gray-400">Established in 1980 to investigate diverse, complex cases from theft to homicides. Collaborative inter-agency operations. Head: Vacant.</p>
-                    </div>
-                    <div class="bg-[#111317] p-4 rounded border border-gray-800">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-yellow-500 font-bold uppercase text-sm">K9 Unit</span>
-                            <span class="bg-yellow-500/10 text-yellow-500 px-2 py-0.5 rounded border border-yellow-500/20">Tryouts Open</span>
-                        </div>
-                        <p class="text-gray-400">Specialized division utilizing trained service canines for suspect tracking, contraband detection, and search and rescue operations. Head: Vacant.</p>
-                    </div>
-                    <div class="bg-[#111317] p-4 rounded border border-gray-800">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-yellow-500 font-bold uppercase text-sm">SEB / SRT</span>
-                            <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-400">Rank: Deputy+</span>
-                        </div>
-                        <p class="text-gray-400">Tactical high-intensity unit equipped with advanced weaponry. Deployed exclusively for barricaded suspects, hostage scenarios, and high-risk warrant execution. Head: Vacant.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
-        <div class="max-w-4xl mx-auto space-y-3">
-            <p class="text-gray-400 font-bold tracking-wider">Approved and Authorized By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span></p>
-            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.</p>
-        </div>
-    </footer>
-
-    <!-- Tactical Radio Audio Engine -->
-    <audio id="radioBeep" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
-
-    <script>
-        const tacticalElements = document.querySelectorAll('a, button, tr, [role="button"]');
-        const audio = document.getElementById('radioBeep');
-        audio.volume = 0.15; 
-
-        tacticalElements.forEach(element => {
-            element.addEventListener('click', () => {
-                audio.currentTime = 0; 
-                audio.play().catch(() => {});
-            });
-        });
-    </script>
-</body>
-</html>

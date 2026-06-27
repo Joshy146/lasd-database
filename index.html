@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASD - Command Portal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .tactical-glow:hover {
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.3);
+            border-color: #eab308;
+        }
+    </style>
+</head>
+<body class="bg-[#121417] text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
+    <header class="bg-[#1a1d24] border-b border-yellow-600/30 p-6 animate__animated animate__fadeInDown">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-shield-halved text-4xl text-yellow-500"></i>
+                <div>
+                    <h1 class="text-2xl font-black tracking-wider text-white">LOS ANGELES COUNTY SHERIFF'S DEPARTMENT</h1>
+                    <p class="text-xs tracking-widest text-yellow-500 font-bold uppercase">Official Documentation & Simulation Tracker</p>
+                </div>
+            </div>
+            <div class="text-right">
+                <span class="bg-yellow-500/10 text-yellow-500 border border-yellow-500/30 text-xs px-3 py-1 rounded font-mono uppercase tracking-wider">
+                    System Active // 2026-v1
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+        <div class="mb-10 text-center md:text-left animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-extrabold text-white tracking-tight">Main Command Directives</h2>
+            <p class="text-gray-400 mt-2">Select a manual below to access authorized departmental operational codes and policies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate__animated animate__fadeInUp">
+            
+            <a href="policy.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-book-open text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">MPP-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Manual of Policy & Procedures</h3>
+                <p class="text-gray-400 text-sm">General operational frameworks, chain of command rules, and traffic stop procedures.</p>
+            </a>
+
+            <a href="handbook.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-id-card text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">EHB-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Employee Handbook</h3>
+                <p class="text-gray-400 text-sm">Mission statements, grooming policies, appearance standards, and time commitments.</p>
+            </a>
+
+            <a href="discipline.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-gavel text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">DPCS-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Disciplinary Actions & Procedures</h3>
+                <p class="text-gray-400 text-sm">Violation classifications (Levels 1-3), administrative strikes, and civil service appeals.</p>
+            </a>
+
+            <a href="emergency.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-triangle-exclamation text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">ERP-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Emergency Response Protocol</h3>
+                <p class="text-gray-400 text-sm">Active shooter operations, scene containment, HazMat isolation zones, and NIMS protocols.</p>
+            </a>
+
+            <a href="uof.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-hand-fist text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">UOF-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Use of Force Directive</h3>
+                <p class="text-gray-400 text-sm">Objective reasonableness scales, resistance profiles, and prohibited physical actions.</p>
+            </a>
+
+            <a href="dis.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-gun text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">DIS-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Deputy-Involved Shooting</h3>
+                <p class="text-gray-400 text-sm">Post-discharge mandates, weapon surrender rules, and transparency media guidelines.</p>
+            </a>
+
+            <a href="bwc.html" class="block p-6 bg-[#1a1d24] border border-gray-800 rounded-lg transition-all duration-300 tactical-glow md:col-span-2 lg:col-span-3">
+                <div class="flex items-center justify-between mb-4">
+                    <i class="fa-solid fa-video text-3xl text-yellow-500"></i>
+                    <span class="text-xs font-mono text-gray-500">BWC-2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Body Worn Camera Policy</h3>
+                <p class="text-gray-400 text-sm">Screen recording capture software rules (Medal, OBS, ShadowPlay), submission requirements, and data integrity laws.</p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#0f1115] border-t border-gray-800 py-8 px-6 text-center text-xs text-gray-500">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="text-gray-400 font-bold tracking-wider">
+                Created and Owned By: <span class="text-yellow-500">Joshua Mansfield | Sheriff, Los Angeles County</span>
+            </p>
+            <p class="text-red-500/80 font-medium max-w-2xl mx-auto leading-relaxed uppercase tracking-normal">
+                ⚠️ NOTICE: This website is for roleplay/simulation tracking purposes only and is completely unaffiliated with real-world law enforcement or government agencies.
+            </p>
+            <p class="font-mono text-gray-600">&copy; 2026 LASD Simulation Network. All Tactical Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
